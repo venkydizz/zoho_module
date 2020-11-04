@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">SHOP</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div>
+    <form class="container" id='form'>
+      <h1>Add New Product</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Product Name</span>
+            </div>
+            <input type="text" id="Pname" class="form-control" placeholder="Product name" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Product Rate</span>
+            </div>
+            <input type="number" id='Prate' class="form-control" placeholder="Product Rate" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Discount(%)</span>
+            </div>
+            <input type="number" id='Pdiscount' class="form-control" placeholder="Discount in percentage" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Avialability" id="r1" value="Available" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Available
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Avialability" id="r2" value="NotAvailable">
+            <label class="form-check-label" for="exampleRadios2">
+              Not Available
+            </label>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Description</span>
+            </div>
+            <textarea class="form-control" id='desc' aria-label="With textarea" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Image</label>
+            <input type="file" id='pimg' class="form-control-file" id="Image" required>
+        </div>
+          
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/body.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
